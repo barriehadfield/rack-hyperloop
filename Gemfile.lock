@@ -1,12 +1,81 @@
-GEM
+GIT
+  remote: https://github.com/janbiedermann/hyper-react
+  revision: 3b7361aa57bd48d4ebcc2e2970ea276a254f2586
+  branch: ulysses
   specs:
+    hyper-react (1.0.0.lap28)
+      hyper-store (= 1.0.0.lap28)
+      opal (>= 0.11.0, < 0.12.0)
+      opal-activesupport (~> 0.3.1)
+      opal-browser (~> 0.2.0)
+
+GIT
+  remote: https://github.com/janbiedermann/hyper-router
+  revision: c1d9fda138a2f20f4c115620e13ddfd8d0b7b4eb
+  branch: ulysses
+  specs:
+    hyper-router (4.2.6.lap28)
+      hyper-react (= 1.0.0.lap28)
+      opal-browser (~> 0.2.0)
+
+GIT
+  remote: https://github.com/janbiedermann/hyper-store
+  revision: 171756a46d7b8883ce59794e9e52a77e92bc5883
+  branch: ulysses
+  specs:
+    hyper-store (1.0.0.lap28)
+      opal (>= 0.11.0, < 0.12.0)
+
+GIT
+  remote: https://github.com/janbiedermann/opal
+  revision: e3fdf16e8a657f7d9f9507207848a34953dced8d
+  branch: es6_import_export
+  specs:
+    opal (0.11.1.dev)
+      ast (>= 2.3.0)
+      hike (~> 1.2)
+      parser (= 2.5.1.0)
+      sourcemap (~> 0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ast (2.4.0)
+    eventmachine (1.2.7)
+    hike (1.2.3)
+    oj (3.6.5)
+    opal-activesupport (0.3.1)
+      opal (>= 0.5.0, < 1.0.0)
+    opal-autoloader (0.0.2)
+      opal (>= 0.11.0)
+    opal-browser (0.2.0)
+      opal
+      paggio
+    opal-webpack-compile-server (0.1.9)
+      eventmachine (~> 1.2.7)
+      oj (~> 3.6.0)
+      opal (>= 0.11.0)
+    paggio (0.2.6)
+    parser (2.5.1.0)
+      ast (~> 2.4.0)
+    puma (3.12.0)
     rack (2.0.5)
+    rake (12.3.1)
+    sourcemap (0.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  hyper-react!
+  hyper-router!
+  hyper-store!
+  opal!
+  opal-autoloader
+  opal-webpack-compile-server
+  puma
   rack
+  rake
 
 BUNDLED WITH
    1.16.3
