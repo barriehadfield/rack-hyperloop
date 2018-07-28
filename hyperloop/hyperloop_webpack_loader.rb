@@ -3,7 +3,7 @@ require 'browser' # CLIENT ONLY
 require 'browser/delay' # CLIENT ONLY
 require 'opal-autoloader'
 require 'hyper-store'
-require 'hyper-react'
+require 'hyper-component'
 # require 'react/auto-import'
 
 # require_tree 'stores'
