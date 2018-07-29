@@ -8,4 +8,4 @@
 ## Run
 
 + `nf start`
-+ `http://localhost:3035/`
++ `http://localhost:9292/`
